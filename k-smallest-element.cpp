@@ -1,11 +1,5 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
+//approach-1
+//quick sort
 
 #include <bits/stdc++.h>
 
@@ -57,3 +51,22 @@ int main()
        cout<<a[i]<<" ";
    }
 }
+
+
+
+
+
+//approach-2
+// sorting - nlog(n)
+int n = nums.size();
+sort(nums.begin(), nums.end());
+return nums[n-k];
+
+//approach-3
+// inbuilt function
+nth_element(nums.begin(), nums.begin() + k - 1, nums.end(), greater<int>());
+return nums[k - 1];
+
+
+
+
